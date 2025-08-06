@@ -6,7 +6,7 @@
 #    By: lbento <lbento@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/05 00:42:29 by lbento            #+#    #+#              #
-#    Updated: 2025/08/05 16:26:31 by lbento           ###   ########.fr        #
+#    Updated: 2025/08/05 20:49:29 by lbento           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ CPPFLAGS = -I.
 CFLAGS = -Wall -Wextra -Werror
 
 SRCS = ft_printf.c ft_putchar_printf.c ft_putnbr_printf.c ft_putnbr_u.c \
-		ft_putstr_printf.c ft_strchr.c ft_pointerhex.c
+		ft_putstr_printf.c ft_strchr.c ft_pointerhex.c ft_putnbr_hex.c
 
 OBJS = $(SRCS:.c=.o)
 

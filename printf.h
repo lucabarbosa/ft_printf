@@ -22,6 +22,7 @@ int		ft_pointerhex(void *ptr);
 int		ft_putstr_printf(char *str);
 int		ft_putnbr_u(unsigned int nbr);
 char	*ft_strchr(const char *s, int c);
+int		ft_putnbr_hex(int nbr, int l_case);
 int		ft_printf(const char *format, ...);
 
 #endif
