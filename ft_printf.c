@@ -6,7 +6,7 @@
 /*   By: lbento <lbento@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 00:41:28 by lbento            #+#    #+#             */
-/*   Updated: 2025/08/05 18:13:08 by lbento           ###   ########.fr       */
+/*   Updated: 2025/08/05 21:08:40 by lbento           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,9 +57,9 @@ static int	ft_convert_args(char func, va_list args)
 	else if (func == 'u')
 		return (ft_putnbr_u(va_arg(args, unsigned int)));
 	else if (func == 'x')
-		return (1);
+		return (ft_putnbr_hex(va_arg(args, int), 0));
 	else if (func == 'X')
-		return (1);
+		return (ft_putnbr_hex(va_arg(args, int), 1));
 	else
 		return (0);
 }
@@ -67,11 +67,11 @@ static int	ft_convert_args(char func, va_list args)
 
 int	main(void)
 {
-	char	c;
-	int		nbr;
-	int		result;
-	int		total_printf;
-	void	*ptr;
+	char		c;
+	int			nbr;
+	int			result;
+	int			total_printf;
+	void		*ptr;
 
 	c = 'c';
 	result = ft_printf("Teste ft (%%c) = %c", c);
@@ -81,7 +81,7 @@ int	main(void)
 	printf("Total da ft_printf = %i", result);
 	printf("\nTotal da printf (original) = %i", total_printf);
 	printf("\n----------------------------------------------------\n");
-	result = ft_printf("Teste (%%s) = %s", "teste");
+	result = ft_printf("Teste ft (%%s) = %s", "teste");
 	printf("\n --\n");
 	total_printf = printf("Original (%%s) = %s", "teste");
 	printf("\n --\n");
@@ -95,16 +95,16 @@ int	main(void)
 	printf("\n --\n");
 	printf("Total da ft_printf = %i", result);
 	printf("\nTotal da printf (original) = %i", total_printf);
-	printf("\n-----------------------------------\n");
-	nbr = -42121351.254;
+	printf("\n----------------------------------------------------\n");
+	nbr = -42949672.254;
 	result = ft_printf("Teste ft (%%i) = %i", nbr);
 	printf("\n --\n");
 	total_printf = printf("Original (%%i) = %i", nbr);
 	printf("\n --\n");
 	printf("Total da ft_printf = %i", result);
 	printf("\nTotal da printf (original) = %i", total_printf);
-	printf("\n-----------------------------------\n");
-	nbr = 42;
+	printf("\n----------------------------------------------------\n");
+	nbr = -42;
 	result = ft_printf("Teste ft (%%u) = %u", nbr);
 	printf("\n --\n");
 	total_printf = printf("Original (%%u) = %u", nbr);
@@ -118,6 +118,22 @@ int	main(void)
 	total_printf = printf("Original (%%p) = %p", ptr);
 	printf("\n --");
 	printf("\nTotal da ft_printf = %i", result);
+	printf("\nTotal da printf (original) = %i", total_printf);
+	printf("\n----------------------------------------------------\n");
+	nbr = 100000;
+	result = ft_printf("Teste ft (%%x) = %x", nbr);
+	printf("\n --\n");
+	total_printf = printf("Original (%%x) = %x", nbr);
+	printf("\n --\n");
+	printf("Total da ft_printf = %i", result);
+	printf("\nTotal da printf (original) = %i", total_printf);
+	printf("\n----------------------------------------------------\n");
+	nbr = 100000;
+	result = ft_printf("Teste ft (%%X) = %X", nbr);
+	printf("\n --\n");
+	total_printf = printf("Original (%%X) = %X", nbr);
+	printf("\n --\n");
+	printf("Total da ft_printf = %i", result);
 	printf("\nTotal da printf (original) = %i", total_printf);
 	printf("\n----------------------------------------------------\n");
 }

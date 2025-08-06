@@ -6,7 +6,7 @@
 /*   By: lbento <lbento@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 15:58:10 by lbento            #+#    #+#             */
-/*   Updated: 2025/08/05 17:11:10 by lbento           ###   ########.fr       */
+/*   Updated: 2025/08/05 20:44:29 by lbento           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ int	ft_putnbr_u(unsigned int nbr)
 {
 	int	i;
 
-	i = 1;
+	i = 0;
 	if (nbr > 9)
 	{
-		ft_putnbr_printf(nbr / 10);
+		i += ft_putnbr_printf(nbr / 10);
 		i++;
 	}
 	write(1, &"0123456789"[nbr % 10], 1);
