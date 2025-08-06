@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printf.h                                      :+:      :+:    :+:   */
+/*   ft_printf.h                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lbento <lbento@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PRINTF_H
-# define PRINTF_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
 # include <unistd.h>
 # include <stdarg.h>
@@ -22,7 +22,7 @@ int		ft_pointerhex(void *ptr);
 int		ft_putstr_printf(char *str);
 int		ft_putnbr_u(unsigned int nbr);
 char	*ft_strchr(const char *s, int c);
-int		ft_putnbr_hex(int nbr, int l_case);
+int		ft_putnbr_hex(unsigned int nbr, int l_case);
 int		ft_printf(const char *format, ...);
 
 #endif
