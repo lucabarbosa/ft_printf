@@ -6,11 +6,11 @@
 /*   By: lbento <lbento@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 13:51:08 by lbento            #+#    #+#             */
-/*   Updated: 2025/08/05 20:16:01 by lbento           ###   ########.fr       */
+/*   Updated: 2025/08/06 11:21:21 by lbento           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_putnbr_printf(int nbr);
 
@@ -21,8 +21,8 @@ int	ft_putnbr_printf(int nbr)
 	i = 0;
 	if (nbr < -2147483647)
 	{
-		write(1, "-2147483648", 10);
-		return (10);
+		write(1, "-2147483648", 11);
+		return (11);
 	}
 	else if (nbr < 0)
 	{	

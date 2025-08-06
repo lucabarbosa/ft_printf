@@ -6,11 +6,11 @@
 /*   By: lbento <lbento@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 13:43:35 by lbento            #+#    #+#             */
-/*   Updated: 2025/08/05 13:43:37 by lbento           ###   ########.fr       */
+/*   Updated: 2025/08/06 11:12:48 by lbento           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_putchar_printf(char c);
 

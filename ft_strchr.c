@@ -6,11 +6,11 @@
 /*   By: lbento <lbento@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 14:10:52 by lbento            #+#    #+#             */
-/*   Updated: 2025/08/05 15:55:50 by lbento           ###   ########.fr       */
+/*   Updated: 2025/08/06 11:13:01 by lbento           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 char	*ft_strchr(const char *s, int c);
 
