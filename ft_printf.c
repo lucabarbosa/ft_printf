@@ -85,7 +85,7 @@ static int	ft_convert_args(char func, va_list args)
 // 	printf("Total da ft_printf = %i", result);
 // 	printf("\nTotal da printf (original) = %i", total_printf);
 // 	printf("\n----------------------------------------------------\n");
-// 	nbr = -42.254;
+// 	nbr = -42;
 // 	result = ft_printf("Teste ft (%%d) = %d", nbr);
 // 	printf("\n --\n");
 // 	total_printf = printf("Original (%%d) = %d", nbr);
@@ -93,7 +93,7 @@ static int	ft_convert_args(char func, va_list args)
 // 	printf("Total da ft_printf = %i", result);
 // 	printf("\nTotal da printf (original) = %i", total_printf);
 // 	printf("\n----------------------------------------------------\n");
-// 	nbr = -42949672.254;
+// 	nbr = -42949672;
 // 	result = ft_printf("Teste ft (%%i) = %i", nbr);
 // 	printf("\n --\n");
 // 	total_printf = printf("Original (%%i) = %i", nbr);
