@@ -6,6 +6,8 @@ A custom implementation of the C standard library's `printf` function, developed
 
 ```bash
 git clone https://github.com/lucabarbosa/ft_printf.git
+```
+```bash
 cd ft_printf
 ```
 
